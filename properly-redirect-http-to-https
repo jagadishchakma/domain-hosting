@@ -1,0 +1,5 @@
+Step-01: Create a .htaccess file in home directory
+Step-02: Paste Below Code:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^subdomain\.example\.com$ [NC]
+RewriteRule .? https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
